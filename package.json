@@ -1,19 +1,18 @@
 {
-  "name": "wgs-gasket-frontend",
+  "name": "wgs-gasket-backend",
   "version": "1.0.0",
-  "private": true,
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node server.js"
   },
   "dependencies": {
-    "axios": "^1.7.2",
-    "element-plus": "^2.7.2",
-    "vue": "^3.4.21"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.2",
-    "vite": "^5.0.11"
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.7",
+    "svg2gcode": "^0.6.0"
   }
 }
